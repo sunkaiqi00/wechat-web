@@ -17,6 +17,7 @@
         </view>
         <view class="msg-content">{{information.content}}</view>
       </view>
+      <view class="line-bottom"></view>
     </div>
   </view>
 </template>
@@ -71,12 +72,12 @@ export default {
 
 <style lang="scss" scoped>
 .k-msg-list-item {
+  position: relative;
   width: 100%;
-  height: 140rpx;
+  padding: 20rpx 0;
   display: flex;
   .user-avatar {
-    // width: 150rpx;
-    padding: 0 16rpx 0 30rpx;
+    padding: 0 20rpx;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -92,12 +93,12 @@ export default {
     .user-info-time {
       display: flex;
       justify-content: space-between;
-      align-items: flex-end;
-      padding-right: 20rpx;
+      padding-right: 25rpx;
       box-sizing: border-box;
-      line-height: 60rpx;
+      line-height: 50rpx;
       .user-name {
         font-size: 28rpx;
+        font-weight: bold;
       }
       .time {
         font-size: 22rpx;
@@ -105,15 +106,17 @@ export default {
       }
     }
     .msg-content {
-      margin-top: -12rpx;
       font-size: 22rpx;
       color: #bdc3c7;
-      display: flex;
-      // align-items: center;
-      line-height: 50rpx;
-      padding-right: 20rpx;
-      border-bottom: 1px solid #ecf0f1;
+      line-height: 40rpx;
     }
+  }
+  .line-bottom {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 83%;
+    border-bottom: 1px solid #f7f7f7;
   }
 }
 </style>

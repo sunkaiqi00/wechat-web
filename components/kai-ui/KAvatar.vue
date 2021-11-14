@@ -3,7 +3,7 @@
 </template>
 
 <script>
-import { computed,ref } from 'vue'
+import { computed, ref } from 'vue'
 export default {
   name: 'KAvatar',
   props: {
@@ -25,7 +25,7 @@ export default {
     }
   },
   setup(props) {
-		const imageSrc = ref(props.src)
+    const imageSrc = ref(props.src)
     const imgStyle = computed(() => {
       let width = /px|rpx/.test(props.size)
         ? props.size.replace(/px|rpx/, '')
@@ -41,7 +41,7 @@ export default {
     })
 
     return {
-			imageSrc,
+      imageSrc,
       imgStyle
     }
   }

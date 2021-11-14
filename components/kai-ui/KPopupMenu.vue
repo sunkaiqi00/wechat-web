@@ -167,11 +167,15 @@ export default {
   border-radius: 10rpx;
   box-shadow: 0 0 1px 1px rgba(0, 0, 0, 0.1);
   transform-origin: left top;
+  z-index: 999999;
 }
 .content-wrapper {
+  display: flex;
+  flex-direction: column;
   border-radius: 10rpx;
   overflow: hidden;
 }
+
 .triangle {
   position: absolute;
   top: 0%;
@@ -196,25 +200,4 @@ export default {
   width: 100%;
   height: 500rpx;
 }
-
-/* .scale-left-top-hidden{
-	transform: scale(0);
-	transition: all 0.1s;
-}
-.scale-left-top-show{
-	transform: scale(1);
-	transition: all 0.1s;
-} */
-/* .scale-enter-from,
-.scale-leave-to {
-  transform: scale(0);
-} */
-/* .scale-enter-to,
-.scale-leave-from {
-  transform: scale(1);
-} */
-/* .scale-enter-active,
-.scale-leave-active {
-  transition: all 0.1s;
-} */
 </style>
