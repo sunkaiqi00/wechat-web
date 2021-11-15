@@ -1,12 +1,15 @@
 <template>
-  <view class="k-list-item" hover-class="hover-light">
-    <view class="image-pd-20">
-      <k-avatar :src="cover || listItem.cover" mode="cover" size="80" />
+  <view class="k-list-item" hover-class="hover-gray">
+    <view class="k-list-left">
+      <slot name="left"></slot>
+      <k-avatar :src="cover" mode="cover" size="80" v-if="cover" />
+      <view class="content">
+        <text>{{content}}</text>
+      </view>
     </view>
-    <view class="content">
-      <slot>
-        <text>{{content||listItem.text}}</text>
-      </slot>
+    <view class="k-list-right">
+      <slot name="right"></slot>
+      <text class="iconfont icon-arrow-right-bold"></text>
     </view>
     <view class="line-bottom"></view>
   </view>
@@ -17,7 +20,6 @@ import KAvatar from './KAvatar.vue'
 export default {
   name: 'KList',
   props: {
-    listItem: Object,
     content: String,
     cover: {
       type: String,
@@ -30,26 +32,37 @@ export default {
 }
 </script>
 
-<style scoped>
+<style lang="scss" scoped>
 .k-list-item {
   position: relative;
   display: flex;
-  padding: 20rpx 0;
-}
-.content {
-  flex: 1;
-  display: flex;
-  align-items: center;
-  font-size: 28rpx;
-}
-.image-pd-20 {
-  padding: 0 20rpx;
-}
-.line-bottom {
-  position: absolute;
-  bottom: 0;
-  right: 0;
-  width: 85%;
-  border-bottom: 1px solid #f7f7f7;
+  padding: 20rpx;
+  .k-list-left,
+  .k-list-right {
+    flex: 1;
+    display: flex;
+    align-items: center;
+  }
+  .k-list-left {
+    justify-content: flex-start;
+    .content {
+      margin-left: 30rpx;
+      font-size: 28rpx;
+    }
+  }
+  .k-list-right {
+    justify-content: flex-end;
+    .icon-arrow-right-bold {
+      margin-left: 12rpx;
+      color: #b6b6b6;
+    }
+  }
+  .line-bottom {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 85%;
+    border-bottom: 1px solid #f7f7f7;
+  }
 }
 </style>

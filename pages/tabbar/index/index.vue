@@ -1,5 +1,5 @@
 <template>
-  <view class="home-view" @click="homePageClick">
+  <view class="home-view page-bg" @click="homePageClick">
     <k-navbar title="微信"></k-navbar>
     <k-container>
       <k-message-list>

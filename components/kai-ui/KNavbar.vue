@@ -123,7 +123,7 @@ export default {
   display: flex;
   width: 100%;
   height: 44px;
-  background-color: #f7f7f7;
+  background-color: #ededed;
   border-bottom: 1px solid #f4f4f4;
   box-sizing: border-box;
   line-height: 44px;
@@ -151,13 +151,14 @@ export default {
     height: 100%;
     text-align: center;
     padding: 0 200rpx;
-    font-size: 28rpx;
+    font-size: 32rpx;
     box-sizing: border-box;
     word-wrap: normal;
     word-break: keep-all;
     overflow: hidden;
     text-overflow: ellipsis;
     letter-spacing: 1px;
+    font-weight: bold;
   }
   .blod-text {
     font-weight: bold;

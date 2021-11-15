@@ -11,7 +11,7 @@ export default {
       type: String,
       default: 'widthFix'
     },
-    scr: {
+    src: {
       type: String,
       default: ''
     },
@@ -26,6 +26,8 @@ export default {
   },
   setup(props) {
     const imageSrc = ref(props.src)
+
+    console.log(imageSrc)
     const imgStyle = computed(() => {
       let width = /px|rpx/.test(props.size)
         ? props.size.replace(/px|rpx/, '')

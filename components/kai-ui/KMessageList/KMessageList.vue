@@ -11,4 +11,7 @@ export default {
 </script>
 
 <style scoped>
+.k-message-list-wrapper {
+  background-color: #fff;
+}
 </style>

@@ -16,7 +16,7 @@
             
         }
         ,{
-            "path" : "pages/tabbar/find/find",
+            "path" : "pages/tabbar/found/found",
             "style" :                                                                                    
             {
                
@@ -61,9 +61,9 @@
 				"text":"通讯录"
 			},
 			{
-				"iconPath":"static/tabbar/find.png",
-				"selectedIconPath":"static/tabbar/find-select.png",
-				"pagePath":"pages/tabbar/find/find",
+				"iconPath":"static/tabbar/found.png",
+				"selectedIconPath":"static/tabbar/found-select.png",
+				"pagePath":"pages/tabbar/found/found",
 				"text":"发现"
 			},
 			{

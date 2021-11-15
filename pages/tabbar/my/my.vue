@@ -1,22 +1,15 @@
 <template>
-	<view>
-		我的
-	</view>
+  <view class="user-page page-bg">我的</view>
 </template>
 
 <script>
-	export default {
-		data() {
-			return {
-				
-			}
-		},
-		methods: {
-			
-		}
-	}
+export default {
+  data() {
+    return {}
+  },
+  methods: {}
+}
 </script>
 
 <style>
-
 </style>
