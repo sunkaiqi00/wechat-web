@@ -9,9 +9,9 @@
     </view>
     <view class="k-list-right">
       <slot name="right"></slot>
-      <text class="iconfont icon-arrow-right-bold"></text>
+      <text class="iconfont icon-arrow-right-bold" v-if="arrow"></text>
     </view>
-    <view class="line-bottom"></view>
+    <view class="line-bottom" v-if="bottomLine"></view>
   </view>
 </template>
 
@@ -24,6 +24,14 @@ export default {
     cover: {
       type: String,
       default: ''
+    },
+    bottomLine: {
+      type: Boolean,
+      default: true
+    },
+    arrow: {
+      type: Boolean,
+      default: true
     }
   },
   components: {

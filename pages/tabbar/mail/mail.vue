@@ -9,6 +9,7 @@
           :index="index"
           :content="item.text"
           :cover="item.cover"
+          :arrow="false"
         ></k-list>
       </view>
       <view class="address-list">
@@ -16,7 +17,12 @@
           <template v-if="item.data.length">
             <view class="word-category">{{item.letter}}</view>
             <template v-for="(val, j) of item.data" :key="j">
-              <k-list :index="j" :content="val" cover="/static/images/mail/friend.png"></k-list>
+              <k-list
+                :arrow="false"
+                :index="j"
+                :content="val"
+                cover="/static/images/mail/friend.png"
+              ></k-list>
             </template>
           </template>
         </template>

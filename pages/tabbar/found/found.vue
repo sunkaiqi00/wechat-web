@@ -2,7 +2,7 @@
   <view class="found page-bg">
     <k-navbar title="发现" />
     <k-container>
-      <k-list content="朋友圈">
+      <k-list content="朋友圈" :bottomLine="false">
         <template v-slot:left>
           <svg
             t="1636988308178"
@@ -66,7 +66,7 @@
         </template>
       </k-list>
       <k-split-block />
-      <k-list content="扫一扫">
+      <k-list content="扫一扫" :bottomLine="false">
         <template v-slot:left>
           <svg
             t="1636989406796"
@@ -86,7 +86,7 @@
           </svg>
         </template>
       </k-list>
-      <k-list content="摇一摇">
+      <k-list content="摇一摇" :bottomLine="false">
         <template v-slot:left>
           <svg
             t="1636989622406"
@@ -112,7 +112,7 @@
         </template>
       </k-list>
       <k-split-block />
-      <k-list content="看一看">
+      <k-list content="看一看" :bottomLine="false">
         <template v-slot:left>
           <svg
             t="1636989679949"
@@ -137,7 +137,7 @@
           </svg>
         </template>
       </k-list>
-      <k-list content="搜一搜">
+      <k-list content="搜一搜" :bottomLine="false">
         <template v-slot:left>
           <svg
             t="1636989691696"
@@ -158,7 +158,7 @@
         </template>
       </k-list>
       <k-split-block />
-      <k-list content="直播和附近">
+      <k-list content="直播和附近" :bottomLine="false">
         <template v-slot:left>
           <svg
             t="1636989722275"
@@ -194,7 +194,7 @@
         </template>
       </k-list>
       <k-split-block />
-      <k-list content="购物">
+      <k-list content="购物" :bottomLine="false">
         <template v-slot:left>
           <svg
             t="1636989762487"
@@ -214,7 +214,7 @@
           </svg>
         </template>
       </k-list>
-      <k-list content="游戏">
+      <k-list content="游戏" :bottomLine="false">
         <template v-slot:left>
           <svg
             t="1636989783126"
@@ -260,7 +260,7 @@
         </template>
       </k-list>
       <k-split-block />
-      <k-list content="小程序">
+      <k-list content="小程序" :bottomLine="false">
         <template v-slot:left>
           <svg
             t="1636989804686"
